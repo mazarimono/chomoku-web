@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="jp">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141701745-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-141701745-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,9 +25,9 @@
         <!--<h3 class="head-title">合同会社 長目</h3>-->
         <img class="shodo" src="images/gold2.png" alt="mountain" width="1000" height="400">
     </div>
-    <section id="section01" class="scroll">
+    <!-- <section id="section01" class="scroll">
         <a href="#ABOUT"><span></span>Scroll</a>
-    </section>
+    </section> -->
     <div class="s-header" id="myHeader">
         <header class="header">
             <h1 class="title-chomoku"><a href="#">Chomoku llc</a></h1>
@@ -28,57 +37,68 @@
                     <li class="nav-item"><a href="#">HOME</a></li>
                     <li class="nav-item"><a href="#ABOUT">ABOUT</a></li>
                     <li class="nav-item"><a href="#NEWS">NEWS</a></li>
-                    <!--<li class="nav-item"><a href="#WORKS">WORKS</a></li>-->
-                    <!--<li class="nav-item"><a href="#BLOG">BLOG</a></li>-->
+                    <li class="nav-item"><a href="#BLOG">BLOG</a></li>
                 </ul>
             </nav>
         </header>
     </div>
     <div id="ABOUT">
-      <div class="syamei">合同会社 長目は</div>
+      <div class="syamei">長目は京都の</div>
+      <div class="syamei center">データ・テクノロジー</div>
+      <div class="syamei right">を扱う会社です</div>
+
       <div class="what-wrapper">
-          <div class="what-box">
+          <div class="what-box fin">
               <i class="icon fas fa-hand-holding-usd"></i>
               <div class="what-title">Finance</div>
+              <p></p>
           </div>
           <div class="what-box">
               <i class="icon fas fa-chart-pie"></i>
-              <div class="what-title">Data</div>
+              <div class="what-title data">Data</div>
           </div>
           <div class="what-box">
               <i class="icon fas fa-layer-group"></i>
-              <div class="what-title">Blockchain</div>
+              <div class="what-title chain">Blockchain</div>
           </div>
       </div>
-      <div class="syamei1">を扱う会社です</div>
+      <div class="syamei1">をメインの活動領域としています</div>
       <div id="chomoku" class="chomoku">
-        <h2 class="word-ex">飛耳長目</h2>
-        <p class="word-kaisetsu">長目という社名は、飛耳長目という言葉に由来します。</p>
-        <p class="word-kaisetsu">飛耳長目は、管子の九守に書かれており、</p>
-        <p class="word-kaisetsu">「情報収集力があり、その情報に対する観察力も優れている」ことを意味します。</p>
+        <h2 class="word-ex">社名の由来</h2>
+        <p class="word-kaisetsu">長目という社名は、<span class="redchomoku">飛耳長目</span>という言葉に由来します。</p>
+        <p class="word-kaisetsu">管子の九守に書かれており、</p>
+        <p class="word-kaisetsu">「情報収集力があり、その情報に対する観察力も優れている」</p>
+        <p class="word-kaisetsu">ことを意味します。</p>
         <br>
         <p class="word-kaisetsu"> </p>
         <p class="word-kaisetsu"> </p>
-        <p class="word-kaisetsu">江戸時代末期の革命家、吉田松陰も飛耳長目という言葉を重視し、</p>
-        <p class="word-kaisetsu">集めた情報を飛耳長目録に記したそうです。</p>
+        <p class="word-kaisetsu">江戸時代末期の革命家、吉田松陰は</p>
+        <p class="word-kaisetsu">集めた情報を飛耳長目録に記しました。</p>
         <p class="word-kaisetsu"></p>
-        <p class="word-kaisetsu">情報があふれる現代に、積極的な情報の活用で問題の解決を目指します。</p>
+        <p class="word-kaisetsu last-word">情報があふれる現代に、積極的な情報の活用で問題の解決を！</p>
 
       </div>
     </div>
     <div id="NEWS">
         <h2 class="news-title" id="NEWS">NEWS</h2>
         <div class="news-wrapper">
+                <div class="news-box news-right">
+                        <time class="news-date date-right" datetime="2019/05/31">2019/05/31</time>
+                        <p class="news-article article-right">合同会社 長目 BLOG OPEN! </p>
+                        <img src="images/sq.PNG" alt="" class="zukei news-right">
+                        <!--<i class="news-icon fas fa-square"></i>-->
+                </div>
             <div class="news-box news-left">
                 <!--<i class="news-icon fas fa-square"></i>-->
                 <img src="images/sq.PNG" alt="" class="zukei news-left">
-                <p class="news-date date-left">2019/03/04</p>
-                <p class="news-article article-left">合同会社 長目  WEBSITE OPEN! </p>
+                <time class="news-date nwes-left" datetime="2019/03/04">2019/03/04</time>
+                <p class="news-article article-left">合同会社 長目 Web Site OPEN</p>
+                <span 
             </div>
             <div class="news-box news-right">
-                <p class="news-date date-right">2017/06/02</p>
+                <time class="news-date date-right" datetime="2017/06/02">2017/06/02</time>
                 <p class="news-article article-right">合同会社 長目 OPEN! </p>
-                <img src="images/sq.PNG" alt="" class="zukei news-right">
+                <img src="images/sq.PNG" alt="" class="zukei news-right last-zukei">
                 <!--<i class="news-icon fas fa-square"></i>-->
             </div>
         </div>
@@ -91,6 +111,11 @@
         <h2 class="news-title">BLOG</h2>
         <h3 class="news-title sub-title">Under Constructing</h3>        
     </div>-->
+    <div id="BLOG">
+        <h3 class="blog-title">BLOG</h3>
+        <!-- <a id="blog-link" href="https://chomoku.blogspot.com/">blogspotでも読めます</a> -->
+        <iframe class="blog-frame" src="https://chomoku.blogspot.com/"></iframe>
+    </div>
     <div class="footer" id="footer">
         <div class="footer-title">
             <h2 class="footer-contact">CONTACT</h2>

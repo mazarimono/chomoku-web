@@ -5,9 +5,23 @@
 }
 
 .picture {
-    max-width: 80%;
+    max-width: 100%;
     margin: 30px auto 30px;
     text-align: center;
+    transition: 2.5s;
+}
+
+.shodo {
+    transition: 2.5s;
+}
+
+.picture:hover{
+    transform: scale(1.2, 1.2);
+    
+}
+
+.picture:hover {
+    /* background-color: black; */
 }
 
 .s-header {
@@ -99,6 +113,7 @@
     color: green;
     margin-left: 3px;
     margin-right: 3px;
+    padding: 5px;
 }
 
 
@@ -112,7 +127,10 @@
     .shodo {
         width: 800px;
         height: 400px;
+        transition: 2.5s;
     }
+
+
 
     .title-chomoku {
         font-size: 2rem;
@@ -130,6 +148,11 @@
     .shodo {
         width: 600px;
         height: 250px;
+        transition: 2.5s;
+    }
+
+    .shodo:hover{
+        transform: scale(1.5, 1.5);
     }
 
     .global-nav {
@@ -183,17 +206,29 @@
 /* what we do */
 .syamei {
     margin: 10% auto 0;
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight: bold;
     width: 80%;
 }
 
+.center {
+    text-align: center;
+}
+
+.center:hover {
+    color: limegreen;
+}
+
+.right {
+    text-align: right;
+}
+
 .syamei1 {
     margin: 10% auto 0;
-    font-size: 6vw;
+    font-size: 4vw;
     font-weight: bold;
     width: 80%;
-    text-align: right;
+    text-align: center;
 }
 
 .what-wrapper {
@@ -213,14 +248,23 @@
     font-size: 4vw;
     font-weight: bold;
 }
+
+.what-title:hover {
+    transform: scale(1.3, 1.3);
+}
+
 .icon {
     width: 150px;
     height: 100px;
     margin-bottom: 30px;
-
     color: limegreen;
     font-size: 10vw;
     line-height: 130px;
+    /* transition: 1.5s; */
+}
+
+.icon:hover {
+    transform: scale(1.2, 1.2);
 }
 
 .chomoku {
@@ -233,9 +277,27 @@
     font-weight: 900;
 }
 
+.redchomoku {
+    color: red;
+}
+
 .word-kaisetsu {
-    font-size: 2vw;
+    font-size: 2.6vw;
     color: slategray;
+}
+
+.word-kaisetsu:hover {
+    color: limegreen;
+}
+
+.word-kaisetsu.last-word {
+    color: red;
+    transition: 1.5s;
+}
+
+.word-kaisetsu.last-word:hover {
+    transform: scale(1.2, 1.2);
+    color: limegreen;
 }
 
 /* NEWS CSS */
@@ -247,7 +309,7 @@
 }
 
 .news-title {
-    font-size: 6vw;
+    font-size: 4vw;
     text-align: center;
     color: limegreen;
     margin-left: 3%;
@@ -268,12 +330,17 @@
     display: inline-block;
 }*/
 .zukei {
-    height: 20%;
-    width: 20%;
+    height: 15%;
+    width: 15%;
     transform: rotate(45deg);
     position: ralative;
     margin-top: 100px;
     z-index: 1;
+    transition: 2.5s;
+}
+
+.zukei:hover {
+    transform: rotateZ(720deg);
 }
 
 .news-left {
@@ -291,23 +358,60 @@
     position: absolute;
     text-align: left;
     margin-top: 10%;
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: bold;
-    z-index: 2;
+    z-index: 1; 
 }
 
 .news-article {
     display: inline;
     position: absolute;
-    font-size: 50px;
+    font-size: 4vw;
     font-weight: bold;
-    color: red;
+    color: green;
     z-index: 1;
 }
 
+.article-right {
+    margin-right: 10%;
+    position: absolute; left: 30%;
+}
+
+.last-zukei {
+    margin-bottom: 10%;
+}
+
+/* BLOG */
+#BLOG {
+    margin-top: -100px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+#blog-link {
+    width: 20%;
+    margin: 0 auto 0;
+    text-decoration: none;
+}
+
+.blog-title {
+    font-size: 4vw;
+    text-align: center;
+    color: limegreen;
+    margin-left: 3%;
+}
+
+iframe {
+    width: 92%;
+    height: 1300px;
+    margin-left: 4%;
+    border-color: transparent;
+}
+
+/* Footer */ 
 .footer {
-    height: 820px;
-    width: cover;
+    height: 900px;
+    width: 100%;
     background: limegreen;
 }
 
@@ -335,10 +439,10 @@
     background: limegreen;
     color: white;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 3%;
 }
 
 #chomoku {
-    background-color: #ffe;
+    background-color: #e0ffff;
     padding: 5%;
 }

@@ -3,7 +3,7 @@ window.onscroll = function() {myFunction()};
 let header = document.getElementById("myHeader");
 let sticky = header.offsetTop;
 
-console.log(window.pageYOffset, header);
+console.log(sticky);
 
 function myFunction() {
     if (window.pageYOffset > sticky) {
